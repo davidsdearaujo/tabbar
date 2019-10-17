@@ -1,9 +1,9 @@
 # tabbar
 
-simple tabbar, rewritten using pagecontroller and facilitating manipulation of the internal PageView. 
+Simple tabbar, rewritten using pagecontroller and facilitating manipulation of the internal PageView. 
 Its layout is very similar to TabBarView, as the following image:
 
-<img src="screenshots/screenshot_1.png" style="width:50%">
+<img src="https://github.com/davidsdearaujo/tabbar/screenshots/screenshot_1.png" style="width:50%">
 
 ## Getting Started
 
