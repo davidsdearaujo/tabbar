@@ -1,9 +1,17 @@
 import 'package:flutter/widgets.dart';
 
-class TabbarController extends PageController{
-final double initialOffset;
+class TabbarController extends PageController {
 
-  TabbarController(this.initialOffset);
+  TabbarController();
+  factory TabbarController.fromPageController(PageController controller){
+    return controller;
+  }
+
   @override
-  double get offset => positions.isEmpty ? initialOffset : position.pixels;
+  double get page => positions.isEmpty ? 0 : page;
+
+  bool get isInitialized => positions.isNotEmpty;
+  bool get isNotInitialized => positions.isEmpty;
+
+  
 }

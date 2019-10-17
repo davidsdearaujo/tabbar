@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'tabbar_controller.dart';
 
 class TabbarIndicator extends StatefulWidget {
-  final PageController controller;
+  final TabbarController controller;
   final List<Tab> tabs;
   final Color color;
 
@@ -31,19 +32,8 @@ class _TabbarIndicatorState extends State<TabbarIndicator> {
 
   double contentWidth = 100;
 
-  double get maxValue => widget.tabs.length.toDouble();
-
-  double get minValue => 0;
-
-  double get currentValue {
-    if (widget.controller.positions.isEmpty)
-      return 0;
-    else
-      return widget.controller.page;
-  }
-
   double get padding {
-    if (widget.controller.positions.isEmpty)
+    if (widget.controller.isNotInitialized)
       return 1;
     else {
       var response = (widget?.controller?.offset ?? 0) *

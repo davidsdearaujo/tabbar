@@ -1,8 +1,8 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'tabbar_controller.dart';
 
 class TabbarContent extends StatelessWidget {
-  final PageController controller;
+  final TabbarController controller;
   final List<Widget> children;
   final ScrollPhysics physics;
   final bool isSnnaping;
@@ -14,6 +14,7 @@ class TabbarContent extends StatelessWidget {
     this.physics,
     this.isSnnaping = true,
   }) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
     return PageView(

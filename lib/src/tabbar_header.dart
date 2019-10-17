@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'tabbar_controller.dart';
 
 import 'tabbar_indicator.dart';
 
 class TabbarHeader extends StatelessWidget {
-  final PageController controller;
+  final TabbarController controller;
   final List<Tab> tabs;
   final Color indicatorColor;
   final Color backgroundColor;
@@ -34,7 +35,7 @@ class TabbarHeader extends StatelessWidget {
                           child: InkWell(
                             child: item,
                             onTap: () {
-                              if (controller.positions.isNotEmpty)
+                              if (controller.isInitialized)
                                 controller.animateToPage(
                                   tabs.indexOf(item),
                                   // tabs.indexWhere((tab) => tab.text == item.text),
