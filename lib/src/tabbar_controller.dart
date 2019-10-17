@@ -1,9 +1,8 @@
 import 'package:flutter/widgets.dart';
 
 class TabbarController extends PageController {
-
   TabbarController();
-  factory TabbarController.fromPageController(PageController controller){
+  factory TabbarController.fromPageController(PageController controller) {
     return controller;
   }
 
@@ -12,6 +11,4 @@ class TabbarController extends PageController {
 
   bool get isInitialized => positions.isNotEmpty;
   bool get isNotInitialized => positions.isEmpty;
-
-  
 }

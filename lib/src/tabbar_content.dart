@@ -14,7 +14,7 @@ class TabbarContent extends StatelessWidget {
     this.physics,
     this.isSnnaping = true,
   }) : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     return PageView(
