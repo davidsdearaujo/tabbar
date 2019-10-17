@@ -3,7 +3,7 @@
 Simple tabbar, rewritten using pagecontroller and facilitating manipulation of the internal PageView. 
 Its layout is very similar to TabBarView, as the following image:
 
-<img src="https://github.com/davidsdearaujo/tabbar/screenshots/screenshot_1.png" style="width:50%">
+<img src="https://github.com/davidsdearaujo/tabbar/blob/master/screenshots/screenshot_1.png?raw=true" style="width:50%">
 
 ## Getting Started
 
