@@ -25,7 +25,7 @@ class TabbarHeader extends StatelessWidget {
       data: Theme.of(context).iconTheme.copyWith(
           color: foregroundColor ?? Theme.of(context).primaryIconTheme.color),
       child: DefaultTextStyle(
-        style: Theme.of(context).textTheme.body1.copyWith(
+        style: Theme.of(context).textTheme.bodyText2.copyWith(
             color: foregroundColor ?? Theme.of(context).primaryIconTheme.color),
         child: Container(
           color: backgroundColor ?? Theme.of(context).primaryColor,
