@@ -1,11 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-class TabbarController extends PageController {
-  TabbarController();
-  factory TabbarController.fromPageController(PageController controller) {
-    return controller;
-  }
-
+extension TabbarPageControllerExtension on PageController {
   @override
   double get page => positions.isEmpty ? 0 : page;
 

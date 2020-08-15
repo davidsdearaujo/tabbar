@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'tabbar_controller.dart';
+import 'page_controller_tabbar_extension.dart';
 
 import 'tabbar_indicator.dart';
 
 class TabbarHeader extends StatelessWidget {
-  final TabbarController controller;
+  final PageController controller;
   final List<Tab> tabs;
   final Color indicatorColor;
   final Color backgroundColor;

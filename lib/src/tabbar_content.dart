@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'tabbar_controller.dart';
 
 class TabbarContent extends StatelessWidget {
-  final TabbarController controller;
+  final PageController controller;
   final List<Widget> children;
   final ScrollPhysics physics;
   final bool isSnnaping;
