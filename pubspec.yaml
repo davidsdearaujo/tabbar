@@ -1,7 +1,6 @@
 name: tabbar
 description: Simple tabbar, rewritten using pagecontroller and facilitating internal PageView manipulation
 version: 0.1.0
-author: F-Team <david@flutterando.com.br>
 homepage: https://flutterando.com.br
 git: https://github.com/davidsdearaujo/tabbar
 repository: https://github.com/davidsdearaujo/tabbar
