@@ -1,3 +1,7 @@
+## [0.1.1] - 2020.08.15
+
+* License updated
+
 ## [0.1.0] - 2020.08.15
 
 * Errors solved
