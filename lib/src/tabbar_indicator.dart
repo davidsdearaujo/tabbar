@@ -4,12 +4,12 @@ import 'page_controller_tabbar_extension.dart';
 class TabbarIndicator extends StatefulWidget {
   final PageController controller;
   final List<Tab> tabs;
-  final Color color;
+  final Color? color;
 
   const TabbarIndicator({
-    Key key,
-    @required this.controller,
-    @required this.tabs,
+    Key? key,
+    required this.controller,
+    required this.tabs,
     this.color,
   }) : super(key: key);
 
@@ -22,7 +22,7 @@ class _TabbarIndicatorState extends State<TabbarIndicator> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((duration) {
+    WidgetsBinding.instance!.addPostFrameCallback((duration) {
       setState(() {
         contentWidth = containerKey.currentContext?.size?.width ??
             MediaQuery.of(context).size.width;
@@ -36,9 +36,9 @@ class _TabbarIndicatorState extends State<TabbarIndicator> {
     if (widget.controller.isNotInitialized)
       return 1;
     else {
-      var response = (widget?.controller?.offset ?? 0) *
+      var response = (widget.controller.offset) *
           (contentWidth - barWidth) /
-          (widget.controller?.position?.maxScrollExtent ?? 0);
+          (widget.controller.position.maxScrollExtent);
 
       if (response <= 0 || response.isNaN) {
         return 0;

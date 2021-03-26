@@ -6,14 +6,14 @@ import 'tabbar_indicator.dart';
 class TabbarHeader extends StatelessWidget {
   final PageController controller;
   final List<Tab> tabs;
-  final Color indicatorColor;
-  final Color backgroundColor;
-  final Color foregroundColor;
+  final Color? indicatorColor;
+  final Color? backgroundColor;
+  final Color? foregroundColor;
 
   const TabbarHeader({
-    Key key,
-    @required this.controller,
-    @required this.tabs,
+    Key? key,
+    required this.controller,
+    required this.tabs,
     this.backgroundColor,
     this.indicatorColor,
     this.foregroundColor,
@@ -25,7 +25,7 @@ class TabbarHeader extends StatelessWidget {
       data: Theme.of(context).iconTheme.copyWith(
           color: foregroundColor ?? Theme.of(context).primaryIconTheme.color),
       child: DefaultTextStyle(
-        style: Theme.of(context).textTheme.bodyText2.copyWith(
+        style: Theme.of(context).textTheme.bodyText2!.copyWith(
             color: foregroundColor ?? Theme.of(context).primaryIconTheme.color),
         child: Container(
           color: backgroundColor ?? Theme.of(context).primaryColor,
